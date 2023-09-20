@@ -974,6 +974,10 @@ body {
     width: 1440px;
     min-height: 1160px;
   }
+
+  .menu__body {
+  box-shadow: none;
+  }
   .content__block {
     position: relative;
     left: 320px;
