@@ -1,0 +1,43 @@
+.brands {
+  &__body {
+    margin: 0 auto 0;
+    min-width: 320px;
+    min-height: 234px;
+    background: $body-bc;
+  }
+  &__title {
+    height: 24px;
+    padding: 16px;
+    color: $brands-title-c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+		background: linear-gradient(to right, $body-bc 0%, $header-bc 100%);
+    margin-bottom: 16px;
+  }
+  &__swiper {
+    padding: 16px;
+  }
+  &__wrapper {
+    margin-bottom: 26px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    border-radius: 6px;
+    border: 1px solid $brands-item-br;
+    background: $header-bc;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 16px;
+    transition-duration: 300ms;
+  }
+	&__item:hover {
+		transform: scale(1.05);
+    padding: 16px 20px;
+	}
+}

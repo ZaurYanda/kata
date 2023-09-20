@@ -1,0 +1,224 @@
+@import "TT_Lakes.css";
+@import "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "TT Lakes Regular", serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.content {
+  &__body {
+    position: relative;
+    margin: 0 auto;
+    min-width: 320px;
+    min-height: 509px;
+    background: $body-bc;
+    box-sizing: border-box;
+  }
+  &__title {
+    display: flex;
+    padding: 24px 16px 24px;
+    color: $menu-text-c;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+  }
+  &__title::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 40px;
+    position: relative;
+    left: -16px;
+    top: 0;
+  }
+  &__title::before {
+    background: url("../img/highlight.svg") center center no-repeat;
+  }
+  &__list {
+    padding: 0 32px 24px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+  }
+  &__list-item {
+    box-sizing: border-box;
+    display: flex;
+    margin-right: 25px;
+    padding: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  &__list-item_blur::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 40px;
+    background-image: linear-gradient(to right, transparent, $body-bc);
+    position: absolute;
+    right: 0px;
+    top: 180px;
+  }
+  &__list-item:last-child {
+    margin-right: 0;
+  }
+  &__list-item:hover {
+    border-radius: 6px;
+    border: 2px solid $border-c;
+    box-sizing: border-box;
+    background: $header-bc;
+    padding: 6px 6px;
+  }
+  &__text {
+    color: $brands-title-c;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+  &__description {
+    display: block;
+  }
+  &__description-container {
+    margin: 0 16px 16px;
+  }
+  &__description-text {
+    color: $menu-text-c;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+  }
+  &__description-text_display_none {
+    display: none;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+  &__description-images {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__images {
+    margin: 27px 0;
+    width: 100%;
+  }
+}
+
+.header {
+  &__body {
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+    background: $header-bc;
+    height: 88px;
+    padding: 18px 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $header-body-bc;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__list_display_none {
+    display: none;
+  }
+  &__list-item {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border: none;
+    background-color: $header-bc;
+    cursor: pointer;
+    opacity: 1;
+		transition: opacity 300ms;
+  }
+  &__list-item:last-child {
+    margin-right: 0;
+  }
+  &__list-item:hover {
+		opacity: 0.7;
+		transform: scale(1.05);
+	}
+  &__list-item_burger {
+    border-radius: 50%;
+    background: $circle-bc url("../img/burger.svg")  no-repeat center;
+  }
+  &__list-item_group {
+    border: none;
+    background-color: $header-bc;
+    background-image: url("../img/Group.svg");
+    width: 97px;
+    height: 51px;
+  }
+  &__list-item_repair {
+    border-radius: 50%;
+    background: $circle-bc url("../img/repair.svg")  no-repeat center;
+  }
+  &__list-item_checkstatus {
+    border-radius: 50%;
+    background: $circle-bc url("../img/checkstatus.svg")  no-repeat center;
+  }
+  &__list-item_burger::after {
+    content: "";
+    display: none;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: $brands-item-br;
+    position: relative;
+    left: 40px;
+    top: 0px;
+  }
+  &__list-item_group::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: $brands-item-br;
+    position: relative;
+    left: 70px;
+    top: 0px;
+  }
+}
+
+@import "cross";
+@import "brands";
+@import "tech";
+@import "technique";
+@import "button";
+@import "circle";
+@import "menu-items";
+@import "price";
+@import "footer";
+@import "modal";
+@import "menu";
+@import "button-send";
+@import "media";
+@import "media-tech";
+@import "media-footer";
+@import "media-modal";
+
+
+

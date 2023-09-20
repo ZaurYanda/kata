@@ -1,0 +1,64 @@
+.tech {
+	&__body {
+    margin: 0 auto 0;
+    min-width: 320px;
+    overflow: hidden;
+    background: $body-bc;
+  }
+  &__title {
+    height: 24px;
+    padding: 16px;
+    color: $brands-title-c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+		background: linear-gradient(to right, $body-bc 0%, $header-bc 100%);
+    margin-bottom: 16px;
+  }
+  &__title-items {
+    padding: 16px 32px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title-item {
+    color: $brands-title-c;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    opacity: 0.7218;
+  }
+  &__title-container {
+    margin-right: 220px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+  }
+  &__swiper {
+    padding: 16px;
+  }
+  &__wrapper {
+    margin-bottom: 26px;
+    box-sizing: border-box;
+  }
+  .swiper-pagination-bullet {
+    display: inline-block;
+    margin: 0 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $brands-label-bc;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $brands-label-bc-checked;
+  }
+  .image-slider .swiper-slide {
+    width: auto;
+  }
+  .tech-top__button, .tech-middle__button{
+    display: none;
+  }
+}

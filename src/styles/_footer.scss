@@ -1,0 +1,56 @@
+.footer {
+	margin: 0 auto;
+	min-width: 320px;
+	background: $body-bc;
+	&__top {
+		min-width: 320px;
+		padding: 16px;
+		margin-bottom: 57px;
+	}
+	&__text {
+		max-width: 421px;
+		color: $menu-text-c;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		letter-spacing: 0.2px;
+		margin-bottom: 10px;
+	}
+	&__title {
+		text-decoration: none;
+		display: inline-block;
+		max-width: 305px;
+		color: $menu-text-c;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		opacity: 1;
+		transition: opacity 300ms;
+	}
+	&__title:hover {
+		opacity: 0.7;
+		transform: scale(1.05);
+	}
+	&__title span {
+		display: inline-block;
+		width: 10px;
+    height: 10px;
+    border-right: 2px solid $brands-icon-c;
+    border-bottom: 2px solid $brands-icon-c;
+    transform: rotate(-45deg);
+	}
+	&__bottom {
+		margin: 0 auto;
+		min-width: 320px;
+		padding: 16px;
+	}
+	&__description {
+		color: $brands-title-c;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 16px;
+	}
+}
+
